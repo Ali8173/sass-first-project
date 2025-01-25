@@ -14,13 +14,17 @@
         gap:2rem;
         padding-bottom: 12rem;
             h1{
-                @include font($barlow, 500, clamp(16px, 4vw, 53px), normal);
+                @include font($barlow, 500, clamp(30px, 4vw, 53px), normal);
                 color:$blue;
             }
 
             h3{
                 @include font($heebo, 400, clamp(12px, 4vw + 1rem, 20px), normal);
                 color:$grey;
+            }
+
+            .h3s{
+                @include font($heebo, 400, clamp(16px, 4vw + 1rem, 20px), normal);
             }
 
     button{

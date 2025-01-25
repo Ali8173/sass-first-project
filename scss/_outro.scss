@@ -14,10 +14,10 @@
         gap:2rem;
         padding-bottom:2rem;
         h1{
-            @include font($barlow, 500, clamp(20px, 5vw, 43px), normal);
+            @include font($barlow, 500, clamp(29px, 5vw, 43px), normal);
         }
         p{
-            @include font($heebo, 400, clamp(14px, 2vw, 17px), normal);
+            @include font($heebo, 400, clamp(16px, 2vw, 17px), normal);
             margin-bottom: 1rem;
         }
         button{
@@ -47,6 +47,7 @@
 
 @media (max-width: 767px){
     .outro{
+        padding-inline:10px;
         display:flex;
         flex-direction: column;
         padding-bottom:2rem;

@@ -11,11 +11,11 @@
             gap:2rem;
 
             h2{
-                @include font($barlow, 500, clamp(18px, 2.5rem + 1vw, 43px), normal);
+                @include font($barlow, 500, clamp(18px, 2.5rem + 1vw, 40px), normal);
             }
 
             p{
-                @include font($heebo, 400, clamp(14px, 2vw, 17px), normal);
+                @include font($heebo, 400, clamp(16px, 4vw + 1rem, 19px), normal);
                 color:$grey;
                 line-height: 26px;
             }
@@ -43,7 +43,7 @@
             justify-content: center;
 
             .mainStuff-div{
-                padding-right:8rem;
+                padding-right:3rem;
             }
         }
         .articles-2, .articles-4{
@@ -53,6 +53,14 @@
             .mainStuff-div{
                 order:2;
             }
+        }
+    }
+}
+
+@media (max-width: 385px){
+    .mainStuff{
+        article{
+            padding-left:20px;
         }
     }
 }

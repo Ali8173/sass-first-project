@@ -5,6 +5,7 @@ footer{
         padding-inline:25px;
         display:flex;
         justify-content: space-between;
+        flex-wrap:wrap;
         margin-bottom: 4rem;
         img{
             max-width:100%;
@@ -28,12 +29,12 @@ footer{
         padding-inline:25px;
         .span2{
             h2{
-                @include font($barlow, 500, clamp(16px, 3vw, 26px), normal);
+                @include font($barlow, 500, clamp(24px, 3vw, 26px), normal);
                 color:$blue;
                 margin-bottom:1rem;                                 
             }
             p{
-                @include font($heebo, 300, clamp(14px, 2vw, 18px), normal);
+                @include font($heebo, 300, clamp(15px, 2vw, 18px), normal);
                 max-width:400px;
             }
             form{
@@ -80,7 +81,7 @@ footer{
                     a{
                         text-decoration:none;
                         color:$grey;
-                        @include font($heebo, 400, clamp(14px, 2vw, 17px), normal);
+                        @include font($heebo, 400, clamp(15px, 2vw, 17px), normal);
                     }
                 }
             }
@@ -94,13 +95,15 @@ footer{
     .span1{
         display:flex;
         justify-content: space-between;
+        gap:.5rem;
+        flex-wrap:wrap;
         color:$grey;
         padding-block:1rem;
         padding-inline:1rem;
         ul{
             display:flex;
             gap:1rem;
-            @include font($heebo, 400, clamp(10px, 2vw, 15px), normal);
+            @include font($heebo, 400, clamp(13px, 2vw, 15px), normal);
             li{
                 list-style-type: none;
             }

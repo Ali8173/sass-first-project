@@ -1,7 +1,8 @@
 .faq{
     padding-bottom:6rem;
+    padding-inline:10px;
     h1{
-        @include font($barlow, 500, clamp(16px, 5vw, 31px), normal);
+        @include font($barlow, 500, clamp(26px, 5vw, 31px), normal);
         margin-bottom:4rem;
         text-align:center;
     }
@@ -19,7 +20,7 @@
             background-color:$platinum;
         }
         p{
-            @include font($heebo, 400, clamp(14px, 2vw, 18px), normal);
+            @include font($heebo, 400, clamp(16px, 2vw, 18px), normal);
             color: $grey;
             opacity:.9;
             padding-block:1rem;
@@ -32,7 +33,7 @@
         padding-block:.3rem;
         padding-left: 1rem;
         h3{
-            @include font($barlow, 600, clamp(14px, 2vw, 18px), normal);
+            @include font($barlow, 600, clamp(16px, 2vw, 18px), normal);
         }
         button{
             background-color:$white;
@@ -45,7 +46,7 @@
         margin-top:10rem;
         h1{
             margin-inline:auto;
-            @include font($barlow, 500, clamp(16px, 5vw, 53px), normal);
+            @include font($barlow, 500, clamp(30px, 5vw, 53px), normal);
             max-width:800px;
             color:$blue;
         }
@@ -53,8 +54,7 @@
         p{
             margin-top:-1em;
             color:$grey;
-            @include font($heebo, 300, clamp(16px, 2vw, 21px), normal);
-            line-height:35px;
+            @include font($heebo, 300, clamp(18px, 2vw, 21px), normal);
             margin-inline:auto;
             text-align:center;
             max-width:900px;

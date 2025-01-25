@@ -19,7 +19,7 @@
         flex-direction:column;
         gap:2rem;
         p{
-            @include font($heebo, 400, clamp(12px, 2vw, 21px), normal);
+            @include font($heebo, 400, clamp(18px, 2vw, 21px), normal);
         }
         span{
             font-size: clamp(14px, 4vw, 30px);
