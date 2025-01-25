@@ -1,0 +1,58 @@
+.mainStuff{
+    margin-top:8rem;
+    margin-inline:25px;
+    article{
+        display: flex;
+        margin-bottom: 2rem;
+        .mainStuff-div{
+            padding-top:4rem;
+            display: flex;
+            flex-direction:column;
+            gap:2rem;
+
+            h2{
+                @include font($barlow, 500, clamp(18px, 2.5rem + 1vw, 43px), normal);
+            }
+
+            p{
+                @include font($heebo, 400, clamp(14px, 2vw, 17px), normal);
+                color:$grey;
+                line-height: 26px;
+            }
+
+            .span{
+                font-size:clamp(25px, 6vw, 45px);
+                padding:1rem;
+                background-color: $munsell;
+                border-radius: 45px;
+            }
+        }
+        img{
+            width: clamp(300px, 50vw, 600px);
+            height:clamp(300px, 50vw, 550px)
+        }
+    }
+}
+
+@media (max-width: 780px){
+    .mainStuff{
+        article{
+            text-align:left;
+            padding-left:3rem;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .mainStuff-div{
+                padding-right:8rem;
+            }
+        }
+        .articles-2, .articles-4{
+            .img-div{
+                order:1;
+            }
+            .mainStuff-div{
+                order:2;
+            }
+        }
+    }
+}

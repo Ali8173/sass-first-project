@@ -1,0 +1,401 @@
+
+
+.billing-cycle{
+    .article3{
+        display:none;
+    }
+    padding-inline: 25px;
+    .span{
+        @include font($heebo, 700, clamp(14px, 2vw, 17px), normal);
+        padding-block:0;
+        padding-inline: 0;
+        display: inline;
+    }
+    .article1{
+        max-width:900px;
+        margin-inline:auto ;
+        margin-top: 8rem;
+        h2{
+            text-align: center;
+            @include font($barlow, 500, clamp(20px, 5vw, 42px), normal);
+            margin-bottom:4rem;
+        }
+
+        div{
+            background-color: $blue;
+            text-align: center;
+            color:white;
+           border-radius: 10px;
+           margin-inline:1rem;
+           padding-block: clamp(1rem, 5vw, 2rem);
+           padding-inline: clamp(1rem, 5vw, 5rem);
+           position:relative;
+            h3{
+                @include font($heebo, 700, clamp(16px, 4vw, 17px), normal);
+                line-height:19px;
+                margin-bottom: 1rem;
+                margin-top:1rem; 
+            }
+            
+            span{
+                position:absolute;
+                top:-2.4rem;
+                transform: translateX(-30px);
+                font-size: clamp(20px, 5vw, 35px);
+                background-color: #30417E;
+                padding-block: 1rem;
+                padding-inline:1rem;
+                border-radius: 50%;
+            }
+            p{
+                @include font($heebo, 400, clamp(14px, 2vw, 17px), normal);
+                line-height:26px;
+               
+            }
+        }
+    }
+
+    .article2{
+        @extend .difference-table;
+        margin-inline:0;
+        padding-inline:0;
+        background-color: #fafafa;
+        .bi{
+            color:$black;
+            padding-left: 3px;
+            font-weight: 900;
+        }
+        .table{
+            display:flex;
+            
+        }
+        .t-head{
+            display: flex;
+            flex-direction: column;
+        }
+
+        div{
+            background-color: $white;
+            color:$black;
+
+            h3{
+                padding-right:4.5rem;
+            }
+        }
+
+        .div-1{ 
+            p{
+            padding-left: 10rem;
+            @include font($heebo, 400, clamp(14px, 2vw, 17px), normal);
+            color:$grey;
+        }
+
+            h4,h3{
+                @include font($heebo, 700, clamp(14px, 2vw, 17px), normal);
+        }
+    }
+
+        .div-2{ 
+        
+        p{
+            padding-left: 14rem;
+            @include font($heebo, 400, clamp(14px, 2vw, 17px), normal);
+            color:$grey;
+        }
+        h4,h3{
+            @include font($heebo, 700, clamp(14px, 2vw, 17px), normal);
+       }
+    }
+
+    .div-3{
+        h4,h3{
+            @include font($heebo, 700, clamp(14px, 2vw, 17px), normal);
+       }
+
+    }
+
+    .div-4{
+        h4,h3{
+            @include font($heebo, 700, clamp(14px, 2vw, 17px), normal);
+       }
+
+      
+    }
+
+        .first{
+            padding-left: 11rem;
+        }
+
+        .second{
+            padding-left: 4rem;
+        }
+
+        button{
+            padding-inline: 20px;
+            padding-block:10px;
+        
+            border-radius: 30px;
+            border:none;
+            background-color:$red;
+            color:$white;
+            @include font($barlow, 700, clamp(17px, 2vw, 17px), italic);
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .btn-first{
+            margin-left:16rem;
+        }
+
+        .fa-regular{
+            color:$blue;
+        }
+
+        
+    }
+
+    .article{
+        background-color: $white;
+        max-width:1000px;
+        margin-inline: auto;
+        margin-bottom: 1rem;
+        border-radius: 10px;
+        margin-top: 5rem;
+        color:white;
+        
+        .table{
+          
+            display:flex;
+            justify-content: space-between;
+            text-align:center;
+            position:relative;
+            em{
+                font-style: normal;
+            }
+            
+            div{
+                padding-block:2rem;
+                display: flex;
+                flex-direction: column;
+                gap:.5em;
+            }
+            p{
+                @include font($heebo, 700, clamp(14px, 2vw, 17px), normal);
+               
+            }
+
+            h5{
+                @include font($heebo, 700, clamp(14px, 2vw, 17px), normal);
+                color:$grey;
+                opacity:.3;
+                text-decoration:line-through;
+            }
+
+            h2{
+                @include font($heebo, 700, clamp(25px, 2vw, 30px), normal);
+                color:$black;
+                text-decoration:line-through;
+            }
+
+            h4{
+                @include font($heebo, 400, clamp(12px, 2.5vw, 15px), normal);
+                
+            }
+
+            span{
+                background-color: cornflowerblue;
+                padding-block: .2rem;
+                padding-inline:.9rem;
+                border-radius: 20px;
+                @include font($barlow, 700, clamp(12px, 2.5vw, 15px), normal);
+                text-transform:uppercase;
+            }
+
+            .em{
+                position:absolute;
+                top:-.5rem;
+                right:4rem;
+                span{
+                    border-radius: 5px;
+                    background-color:skyblue ;
+                    @include font($barlow, 700, clamp(12px, 2.5vw, 15px), normal);
+                    text-transform: uppercase;
+                    padding-block: 5px;
+                }  
+            }
+
+            .t-head2{
+                padding-inline:25px;
+                max-width: 15rem;
+                background-color: $blue;
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+
+                h2{
+                    color:$white;
+                }
+                h5{
+                    color:$white;
+                    opacity:.4;
+                }
+            }
+
+            .t-head1{
+                margin-left: 20rem;
+                h4,p{
+                    color:$grey;
+                }
+
+            }
+        }
+
+
+    }
+
+    .bottom{
+        margin-top: -2rem;
+        margin-inline: auto;
+        display:grid;
+        place-content:center;
+        div{
+            background-color: $munsell;
+            padding-block: 1.5rem;
+            padding-inline:2rem;
+            border-radius: 10px;
+
+            img{
+                padding-right:1rem;
+            }
+        }
+    }
+
+     
+}
+
+@media (max-width: 760px){
+
+       .billing-cycle{
+            .article, .article2{
+        display:none;
+    }
+        .article3 {
+            display:block;
+            margin-bottom:4rem;
+            padding-inline:25px;
+            .table{
+               border-radius:10px;
+                margin-inline:auto;
+                max-width:320px;
+                text-align: center;
+                padding-inline:25px;
+                .t-head1, .t-head2{
+                p{
+                    @include font($heebo, 700, clamp(15px, 2vw, 17px), normal);
+                    text-transform:capitalize;
+                    margin-bottom: 1.5rem;
+                }
+                h5{
+                    @include font($heebo, 700, clamp(17px, 2vw, 17px), normal);
+                    color: $grey;
+                    opacity:.5;
+                    text-decoration: line-through;
+                    margin-bottom:.5rem;
+                }
+                h2{
+                    @include font($heebo, 700, clamp(25px, 2vw, 30px), normal);
+                    margin-bottom:.5rem;
+                }
+                span{
+                    background-color: cornflowerblue ;
+                    color:white;
+                    border-radius:30px;
+                    padding-block:.3rem;
+                    padding-inline:.7rem;
+                    font-style: normal;
+                }
+                h4{
+                    @include font($heebo, 400, clamp(14px, 1.2vw, 16px), normal);
+                    color: $grey;
+                    margin-bottom:1rem;
+                    margin-top: .8rem;
+                }
+            }
+
+            button{
+                padding-inline: 20px;
+                padding-block:10px;
+            
+                border-radius: 30px;
+                border:none;
+                background-color:$red;
+                color:$white;
+                @include font($barlow, 700, clamp(17px, 2vw, 17px), italic);
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                margin-bottom:2rem;
+                margin-top: 1rem;
+            }
+
+            .t-head2{
+                margin-top:2rem;
+            }
+
+        }
+        hr{
+            margin-bottom:1rem;
+            width:95%;
+            margin-inline:auto;
+        }
+            .t-body1, .t-body2{
+                h4{margin-bottom: 1rem;
+                    @include font($heebo, 700, clamp(17px, 2vw, 17px), normal);    
+                    margin-top: 1.5rem;
+                    .span{
+                        @include font($heebo, 400, clamp(17px, 2vw, 17px), normal); 
+                        color:$grey;
+                    }
+                }
+                p{
+                    @include font($heebo, 400, clamp(17px, 2vw, 17px), normal);  
+                    margin-bottom:1rem;
+                }
+            }
+
+        .table1{
+            background-color:$white;
+            margin-top:4rem;
+            .t-head1{
+                p{
+                    padding-top:1rem;
+                }
+            }
+        }
+                    
+        .table2{
+            background-color: $blue;
+            color:$white;
+            .t-head2{
+                position:relative;
+                p,h5,h4{
+                    color:$white;
+                }
+                p{
+                    padding-top:2.5rem;
+                }
+                .em{
+                    position:absolute;
+                    top:-7px;
+                    right:5rem;
+                    span{
+                        background-color:skyblue;
+                        padding-inline:.5rem;
+                        padding-block:.2rem;
+                        border-radius: 5px;
+                        text-transform:uppercase;
+                    }
+                }
+            }
+        }
+    }
+}
+}

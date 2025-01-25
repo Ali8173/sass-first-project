@@ -1,0 +1,10 @@
+@import "intro";
+
+
+.how-it-works{
+    @extend .intro;
+    background-image: linear-gradient(360deg, $munsell, mintcream);
+    article{
+        border-radius:5px;
+    }
+}

@@ -1,0 +1,178 @@
+.difference-table{
+    background-color: $blue;
+    color:$white;
+    margin-inline:25px;
+    border-radius:10px;
+    padding-inline: 30px;
+    padding-bottom: 4rem;
+    
+    .fa-solid {
+        color:$blue;
+        background-color: $white;
+        padding-block: .3rem;
+        padding-inline: .4rem;
+        border-radius: 50%;
+        font-size:clamp(5px, 1.5vw, 8px);
+        font-weight: 800;
+        transform: translateY(-3px);
+        margin-left:5px;
+    }
+
+    h1{
+        @include font($barlow, 500, clamp(20px, 5vw, 43px), normal);
+        text-align:center;
+        padding-block:4rem;
+        max-width:1000px;
+        margin-inline: auto;
+    }
+
+
+    div{
+        display:flex;
+        background-color: #4761BB;
+        margin-bottom: 1rem;
+        padding-block: .5rem;
+        border-radius: 10px;
+        padding-inline: 25px;
+        justify-content: space-between;
+        max-width:1000px;
+        margin-inline: auto;
+
+        .none{
+            display:flex;
+            justify-content:space-between;
+            flex-grow:1;
+
+            .none-1{
+                margin-left: -3rem;
+            }
+            .none-2{
+                margin-left:3rem;
+            }
+            .none-3{
+                margin-left:2.8rem;
+            }
+            .none-4{
+                margin-left:-.4rem;
+            }
+            .none-5{
+                margin-left:3rem;
+            }
+            .none-7{
+                margin-left:3rem;
+            }
+        }
+
+        
+        hr{
+            display: none;
+        }
+
+        .fa-regular{
+            font-size:clamp(15px, 5vw, 25px), ;
+        }
+
+        .fa-circle-xmark{
+            opacity: .5;
+        }
+
+        .fa-circle-check-2{
+            padding-right:4rem;
+        }
+
+
+        .h4s{
+            @include font($heebo, 400, clamp(14px, 3vw, 18px), normal);
+            flex-grow:1;  
+        }
+
+        span{
+            display: flex;
+            justify-content: space-between;
+            gap:12rem;
+          
+        }
+        i{
+            padding-right:6rem;
+        }
+    }
+
+    .t-heads{
+        display:flex;
+        margin-bottom: 1rem;
+        padding-block: .5rem;
+        border-radius: 10px;
+        padding-inline: 25px;
+        justify-content: space-between;
+        max-width:1000px;
+
+        
+        h3{
+            @include font($heebo, 400, clamp(16px, 2vw, 20px), normal);
+            text-transform: capitalize;
+            }
+        .h3{
+            padding-right:5rem;
+        }    
+            p{
+                margin-right: 12rem;
+            }
+    }
+
+
+   
+}
+
+
+@media (max-width: 810px){
+
+    .difference-table{
+        .t-heads{
+            display: flex;
+            justify-content:space-around;
+
+            .h3{
+                padding-right:0;
+            }   
+            p{
+                display:none;
+            }
+        }
+        .divs{
+            display: flex;
+            flex-direction:column;
+            .none{
+                display: flex;
+                justify-content:space-around;
+                min-width:100%;
+
+                .i-1{
+                    margin-right:9rem;
+                }
+                .i-1-i{
+                    margin-right:3rem;
+                }
+                .none-2-xmark{
+                    margin-left:0;
+                }
+                .fa-circle-xmark{
+                   transform: translateX(1rem);
+                }
+                .fa-circle-check{
+                    transform: translateX(4rem);
+                }
+            }
+            hr{
+                display:block;
+                height:1px;
+                background-color:$platinum;
+                border:none;
+                opacity:.4;
+            }
+            h4{
+                text-align:center;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}

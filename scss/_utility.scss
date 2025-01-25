@@ -1,0 +1,121 @@
+
+$black:black;
+$red:#ED2C49;
+$white:white;
+$light-blue:#F0F4F4;
+$blue:rgb(62, 84, 163);
+$skyblue:skyblue;
+$munsell: #F0F4F4;
+$grey:rgb(115, 115, 115);
+$platinum:#DBE5E6;
+$dark-grey:rgba(46, 78, 78, 0.89);
+$barlow:"Barlow", sans-serif;
+$heebo: 'Heebo', sans-serif;
+
+@mixin font($family, $weight, $size, $style){
+    font-family: $family;
+    font-weight:$weight;
+    font-size: $size;
+    font-style:$style;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #FAFAFA;
+    overflow-x: hidden;
+}
+
+button{
+    padding-inline: 2rem;
+    padding-block:1rem;
+}
+
+/**
+*!UTILITY styles
+**/
+ .main-btn{
+    padding-inline: 20px;
+    padding-block:10px;
+
+    border-radius: 30px;
+}
+ 
+
+.list-none{
+    list-style-type: none;
+}
+
+
+
+
+.textdecoration-no{
+    text-decoration: none;
+}
+
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+
+.hidden{
+    display: none;
+}
+
+.visible{
+    display: block;
+}
+
+
+.space-between{
+    justify-content: space-between;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.center{
+    align-items: center;
+    justify-content: center;
+}
+
+.m-inline{
+    margin-inline: 45px;
+}
+
+.mr-ml-auto{
+    margin-inline:auto;
+}
+
+.no-border{
+    border:none ;
+}
+
+.border-radius-1{
+    border-radius: 10px;
+}
+
+.border-radius-10{
+    border-radius: 50%;
+}
+
+.border-lightgrey{
+    border-color: lightgrey;
+}
+
+.border-width-1{
+    border-width: 1px;
+}
+
+.border-solid{
+    border-style: solid;
+}
+
+

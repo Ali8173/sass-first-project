@@ -1,0 +1,90 @@
+.ecology{
+    display:grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap:1rem;
+    margin-inline:25px;
+    margin-block:70px;
+    background-color: $munsell;
+    border-radius:10px;
+    padding-inline: 25px;
+    padding-block-start:60px;
+    padding-block-end:120px;
+    h1{
+        @include font($barlow, 500, clamp(20px, 5vw, 43px), normal);
+    }
+    p{
+        @include font($heebo, 500, clamp(16px, 2vw, 20px), normal);
+        color:$grey;
+    }
+
+    img{
+        max-width:100%;
+        border-radius: 10px;
+    }
+
+    .article{
+       grid-column:span 7;
+       padding-right:2rem;
+       margin-top:5rem;
+       h1{
+        @include font($barlow, 500, clamp(20px, 5vw, 43px), normal);
+        margin-bottom:2rem;
+     }
+    p{
+        @include font($heebo, 400, clamp(16px, 2vw, 20px), normal);
+        line-height:30px;
+        color:$grey;
+    }
+    }
+
+
+    .article1{
+        grid-column: span 5;
+
+        position:relative;
+        .green-forest{
+            max-width:350px ;
+        }
+
+        .ecology-1{
+            padding:1rem;
+            position:absolute;
+            top:265px;
+            right:30px;
+            max-width: 180px;
+            background-image: linear-gradient(180deg, #C5DDEB 70%, #BFC8CA, #818687 );
+        }
+    }
+    
+
+}
+
+@media (max-width: 1025px){
+    .ecology{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+    gap:1rem;
+    margin-inline:25px;
+    margin-block:70px;
+    background-color: $munsell;
+    border-radius:10px;
+    padding-inline: 25px;
+    padding-block-start:60px;
+    padding-block-end:120px;
+    text-align:center;
+
+    .article{
+        margin-top:6rem;
+    }
+    }
+}
+
+@media (max-width: 950px){
+    .ecology{
+        .ecology-1{
+            right:10rem;
+        }
+    }
+}

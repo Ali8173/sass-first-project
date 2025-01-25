@@ -1,0 +1,14 @@
+@import "intro";
+
+
+.testimonial{
+    @extend .intro;
+    background-image: linear-gradient(360deg, $munsell, mintcream);
+    article{
+        border-radius:5px;
+    }
+};
+
+@media (max-width: 1025px){
+    
+}

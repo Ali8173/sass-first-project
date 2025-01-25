@@ -1,0 +1,66 @@
+.outro{
+    display: grid;
+    grid-template-columns:repeat(12, 1fr);
+    background-color: $blue;
+    padding-block: 4rem;
+    padding-left: 1.5rem;
+    color:$white;
+    margin-top:7rem;
+    margin-inline:30px;
+    border-radius:10px;
+    .article{
+        grid-column: span 6;
+        display: grid;
+        gap:2rem;
+        padding-bottom:2rem;
+        h1{
+            @include font($barlow, 500, clamp(20px, 5vw, 43px), normal);
+        }
+        p{
+            @include font($heebo, 400, clamp(14px, 2vw, 17px), normal);
+            margin-bottom: 1rem;
+        }
+        button{
+            @include font($barlow, 700, clamp(14px, 2vw, 17px), italic);
+            color:$blue;
+            letter-spacing: 2px;
+            background-color: $white;
+            text-transform: uppercase;
+            border:none;
+            border-radius: 30px;
+            margin-bottom:1rem;
+        }
+        a{
+            color:$white;
+        }
+    }
+    .article1{
+        grid-column:8 / span 6;
+        background-image: url('/pro-teams.webp');
+        background-repeat: no-repeat;
+        background-size:450px 400px;
+        img{
+            display:none;
+        }
+    }
+}
+
+@media (max-width: 767px){
+    .outro{
+        display:flex;
+        flex-direction: column;
+        padding-bottom:2rem;
+        .article{
+            order:2;
+        }
+        .article1{
+            order:1;
+            background:none;
+           img{
+            display:block;
+            max-width:300px;
+            margin-inline:auto;
+           }
+        }
+    }
+}

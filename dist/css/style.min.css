@@ -1,0 +1,1917 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FAFAFA;
+  overflow-x: hidden;
+}
+
+button, .hero-section .article-1 button, .header-nav div ul li .header-btn {
+  padding-inline: 2rem;
+  padding-block: 1rem;
+}
+
+/**
+*!UTILITY styles
+**/
+.main-btn, .upgrade button, .upgrade .header-nav div ul li .header-btn, .header-nav div ul li .upgrade .header-btn, .hero-section .article-1 button, .hero-section .article-1 .header-nav div ul li .header-btn, .header-nav div ul li .hero-section .article-1 .header-btn {
+  padding-inline: 20px;
+  padding-block: 10px;
+  border-radius: 30px;
+}
+
+.list-none {
+  list-style-type: none;
+}
+
+.textdecoration-no {
+  text-decoration: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.center {
+  align-items: center;
+  justify-content: center;
+}
+
+.m-inline {
+  margin-inline: 45px;
+}
+
+.mr-ml-auto {
+  margin-inline: auto;
+}
+
+.no-border {
+  border: none;
+}
+
+.border-radius-1 {
+  border-radius: 10px;
+}
+
+.border-radius-10 {
+  border-radius: 50%;
+}
+
+.border-lightgrey {
+  border-color: lightgrey;
+}
+
+.border-width-1 {
+  border-width: 1px;
+}
+
+.border-solid {
+  border-style: solid;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 8rem;
+  margin-top: 2rem;
+  margin-inline: 25px;
+}
+.header-nav div .lines {
+  display: none;
+}
+.header-nav div ul {
+  display: flex;
+  gap: 1rem;
+}
+.header-nav div ul li {
+  list-style-type: none;
+}
+.header-nav div ul li .header-btn {
+  padding-block: 0.5rem;
+  color: white;
+  background-color: black;
+  border-radius: 30px;
+  border: none;
+}
+.header-nav div ul li a {
+  text-decoration: none;
+  color: black;
+  font-family: "Barlow", sans-serif;
+  font-style: italic;
+  font-size: clamp(12px, 2vw + 8px, 16px);
+  font-weight: 700;
+}
+.header-nav img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+@media (max-width: 980px) {
+  .header-nav {
+    padding-bottom: 5rem;
+  }
+  .header-nav div ul {
+    display: none;
+  }
+  .header-nav div .lines {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+  .header-nav div .lines div {
+    background-color: black;
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FAFAFA;
+  overflow-x: hidden;
+}
+
+button, .hero-section .article-1 button, .header-nav div ul li .header-btn {
+  padding-inline: 2rem;
+  padding-block: 1rem;
+}
+
+/**
+*!UTILITY styles
+**/
+.main-btn, .upgrade button, .upgrade .header-nav div ul li .header-btn, .header-nav div ul li .upgrade .header-btn, .hero-section .article-1 button, .hero-section .article-1 .header-nav div ul li .header-btn, .header-nav div ul li .hero-section .article-1 .header-btn {
+  padding-inline: 20px;
+  padding-block: 10px;
+  border-radius: 30px;
+}
+
+.list-none {
+  list-style-type: none;
+}
+
+.textdecoration-no {
+  text-decoration: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.center {
+  align-items: center;
+  justify-content: center;
+}
+
+.m-inline {
+  margin-inline: 45px;
+}
+
+.mr-ml-auto {
+  margin-inline: auto;
+}
+
+.no-border {
+  border: none;
+}
+
+.border-radius-1 {
+  border-radius: 10px;
+}
+
+.border-radius-10 {
+  border-radius: 50%;
+}
+
+.border-lightgrey {
+  border-color: lightgrey;
+}
+
+.border-width-1 {
+  border-width: 1px;
+}
+
+.border-solid {
+  border-style: solid;
+}
+
+.hero-section {
+  padding-bottom: 8rem;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  margin-left: 30px;
+  margin-right: 0;
+  background-size: 100%;
+}
+.hero-section .article-1 {
+  display: flex;
+  flex-direction: column;
+  grid-column: span 7;
+  gap: 2rem;
+  padding-bottom: 12rem;
+}
+.hero-section .article-1 h1 {
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  font-size: clamp(16px, 4vw, 53px);
+  font-style: normal;
+  color: rgb(62, 84, 163);
+}
+.hero-section .article-1 h3 {
+  font-family: "Heebo", sans-serif;
+  font-weight: 400;
+  font-size: clamp(12px, 4vw + 1rem, 20px);
+  font-style: normal;
+  color: rgb(115, 115, 115);
+}
+.hero-section .article-1 button, .hero-section .article-1 .header-nav div ul li .header-btn, .header-nav div ul li .hero-section .article-1 .header-btn {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-size: clamp(12px, 4vw + 1rem, 18px);
+  font-style: italic;
+  padding-block: 1rem;
+  text-transform: uppercase;
+  color: white;
+  background-color: #ED2C49;
+  border: none;
+  letter-spacing: 1px;
+}
+.hero-section .article-2 {
+  background-image: url("/pro-hero.webp");
+  background-size: 800px 600px;
+  background-image: center;
+  grid-column: span 5;
+}
+.hero-section .article-2 img {
+  display: none;
+}
+
+@media (max-width: 780px) {
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .hero-section .article-1 h1 {
+    padding-right: 30px;
+  }
+  .hero-section .article-1 h3 {
+    padding-right: 50px;
+  }
+  .hero-section .article-2 {
+    background: none;
+  }
+  .hero-section .article-2 img {
+    display: flex;
+    margin-top: -10rem;
+    visibility: visible;
+    max-width: 100%;
+    padding-inline: 30px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FAFAFA;
+  overflow-x: hidden;
+}
+
+button, .header-nav div ul li .header-btn, .hero-section .article-1 button {
+  padding-inline: 2rem;
+  padding-block: 1rem;
+}
+
+/**
+*!UTILITY styles
+**/
+.main-btn, .upgrade button, .upgrade .header-nav div ul li .header-btn, .header-nav div ul li .upgrade .header-btn, .hero-section .article-1 button, .hero-section .article-1 .header-nav div ul li .header-btn, .header-nav div ul li .hero-section .article-1 .header-btn {
+  padding-inline: 20px;
+  padding-block: 10px;
+  border-radius: 30px;
+}
+
+.list-none {
+  list-style-type: none;
+}
+
+.textdecoration-no {
+  text-decoration: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.center {
+  align-items: center;
+  justify-content: center;
+}
+
+.m-inline {
+  margin-inline: 45px;
+}
+
+.mr-ml-auto {
+  margin-inline: auto;
+}
+
+.no-border {
+  border: none;
+}
+
+.border-radius-1 {
+  border-radius: 10px;
+}
+
+.border-radius-10 {
+  border-radius: 50%;
+}
+
+.border-lightgrey {
+  border-color: lightgrey;
+}
+
+.border-width-1 {
+  border-width: 1px;
+}
+
+.border-solid {
+  border-style: solid;
+}
+
+.intro, .testimonial, .how-it-works {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  background-color: #F0F4F4;
+  gap: 2rem;
+  margin-inline: 25px;
+  padding-inline: 30px;
+  padding-block: 4rem;
+  border-radius: 10px;
+}
+.intro article, .testimonial article, .how-it-works article {
+  grid-column: span 6;
+  background-color: white;
+  text-align: center;
+  color: black;
+  padding: 2rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.intro article p, .testimonial article p, .how-it-works article p {
+  font-family: "Heebo", sans-serif;
+  font-weight: 400;
+  font-size: clamp(12px, 2vw, 21px);
+  font-style: normal;
+}
+.intro article span, .testimonial article span, .how-it-works article span {
+  font-size: clamp(14px, 4vw, 30px);
+}
+.intro article div h3, .testimonial article div h3, .how-it-works article div h3 {
+  font-family: "Heebo", sans-serif;
+  font-weight: 700;
+  font-size: clamp(14px, 2vw, 17px);
+  font-style: normal;
+  color: rgb(62, 84, 163);
+  text-transform: uppercase;
+}
+.intro article div p, .testimonial article div p, .how-it-works article div p {
+  font-family: "Heebo", sans-serif;
+  font-weight: 400;
+  font-size: clamp(12px, 2.5vw, 15px);
+  font-style: normal;
+  color: grey;
+}
+
+@media (max-width: 1025px) {
+  .intro, .testimonial, .how-it-works {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .intro article, .testimonial article, .how-it-works article {
+    max-width: 700px;
+    margin-inline: auto;
+    padding-block: 3rem;
+  }
+}
+.mainStuff {
+  margin-top: 8rem;
+  margin-inline: 25px;
+}
+.mainStuff article {
+  display: flex;
+  margin-bottom: 2rem;
+}
+.mainStuff article .mainStuff-div {
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.mainStuff article .mainStuff-div h2 {
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  font-size: clamp(18px, 2.5rem + 1vw, 43px);
+  font-style: normal;
+}
+.mainStuff article .mainStuff-div p {
+  font-family: "Heebo", sans-serif;
+  font-weight: 400;
+  font-size: clamp(14px, 2vw, 17px);
+  font-style: normal;
+  color: rgb(115, 115, 115);
+  line-height: 26px;
+}
+.mainStuff article .mainStuff-div .span {
+  font-size: clamp(25px, 6vw, 45px);
+  padding: 1rem;
+  background-color: #F0F4F4;
+  border-radius: 45px;
+}
+.mainStuff article img {
+  width: clamp(300px, 50vw, 600px);
+  height: clamp(300px, 50vw, 550px);
+}
+
+@media (max-width: 780px) {
+  .mainStuff article {
+    text-align: left;
+    padding-left: 3rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .mainStuff article .mainStuff-div {
+    padding-right: 8rem;
+  }
+  .mainStuff .articles-2 .img-div, .mainStuff .articles-4 .img-div {
+    order: 1;
+  }
+  .mainStuff .articles-2 .mainStuff-div, .mainStuff .articles-4 .mainStuff-div {
+    order: 2;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FAFAFA;
+  overflow-x: hidden;
+}
+
+button, .header-nav div ul li .header-btn, .hero-section .article-1 button {
+  padding-inline: 2rem;
+  padding-block: 1rem;
+}
+
+/**
+*!UTILITY styles
+**/
+.main-btn, .upgrade button, .upgrade .header-nav div ul li .header-btn, .header-nav div ul li .upgrade .header-btn, .hero-section .article-1 button, .hero-section .article-1 .header-nav div ul li .header-btn, .header-nav div ul li .hero-section .article-1 .header-btn {
+  padding-inline: 20px;
+  padding-block: 10px;
+  border-radius: 30px;
+}
+
+.list-none {
+  list-style-type: none;
+}
+
+.textdecoration-no {
+  text-decoration: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.center {
+  align-items: center;
+  justify-content: center;
+}
+
+.m-inline {
+  margin-inline: 45px;
+}
+
+.mr-ml-auto {
+  margin-inline: auto;
+}
+
+.no-border {
+  border: none;
+}
+
+.border-radius-1 {
+  border-radius: 10px;
+}
+
+.border-radius-10 {
+  border-radius: 50%;
+}
+
+.border-lightgrey {
+  border-color: lightgrey;
+}
+
+.border-width-1 {
+  border-width: 1px;
+}
+
+.border-solid {
+  border-style: solid;
+}
+
+.intro, .testimonial, .how-it-works {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  background-color: #F0F4F4;
+  gap: 2rem;
+  margin-inline: 25px;
+  padding-inline: 30px;
+  padding-block: 4rem;
+  border-radius: 10px;
+}
+.intro article, .testimonial article, .how-it-works article {
+  grid-column: span 6;
+  background-color: white;
+  text-align: center;
+  color: black;
+  padding: 2rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.intro article p, .testimonial article p, .how-it-works article p {
+  font-family: "Heebo", sans-serif;
+  font-weight: 400;
+  font-size: clamp(12px, 2vw, 21px);
+  font-style: normal;
+}
+.intro article span, .testimonial article span, .how-it-works article span {
+  font-size: clamp(14px, 4vw, 30px);
+}
+.intro article div h3, .testimonial article div h3, .how-it-works article div h3 {
+  font-family: "Heebo", sans-serif;
+  font-weight: 700;
+  font-size: clamp(14px, 2vw, 17px);
+  font-style: normal;
+  color: rgb(62, 84, 163);
+  text-transform: uppercase;
+}
+.intro article div p, .testimonial article div p, .how-it-works article div p {
+  font-family: "Heebo", sans-serif;
+  font-weight: 400;
+  font-size: clamp(12px, 2.5vw, 15px);
+  font-style: normal;
+  color: grey;
+}
+
+@media (max-width: 1025px) {
+  .intro, .testimonial, .how-it-works {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .intro article, .testimonial article, .how-it-works article {
+    max-width: 700px;
+    margin-inline: auto;
+    padding-block: 3rem;
+  }
+}
+.how-it-works {
+  background-image: linear-gradient(360deg, #F0F4F4, mintcream);
+}
+.how-it-works article {
+  border-radius: 5px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FAFAFA;
+  overflow-x: hidden;
+}
+
+button, .header-nav div ul li .header-btn, .hero-section .article-1 button {
+  padding-inline: 2rem;
+  padding-block: 1rem;
+}
+
+/**
+*!UTILITY styles
+**/
+.main-btn, .upgrade button, .upgrade .header-nav div ul li .header-btn, .header-nav div ul li .upgrade .header-btn, .hero-section .article-1 button, .hero-section .article-1 .header-nav div ul li .header-btn, .header-nav div ul li .hero-section .article-1 .header-btn {
+  padding-inline: 20px;
+  padding-block: 10px;
+  border-radius: 30px;
+}
+
+.list-none {
+  list-style-type: none;
+}
+
+.textdecoration-no {
+  text-decoration: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.center {
+  align-items: center;
+  justify-content: center;
+}
+
+.m-inline {
+  margin-inline: 45px;
+}
+
+.mr-ml-auto {
+  margin-inline: auto;
+}
+
+.no-border {
+  border: none;
+}
+
+.border-radius-1 {
+  border-radius: 10px;
+}
+
+.border-radius-10 {
+  border-radius: 50%;
+}
+
+.border-lightgrey {
+  border-color: lightgrey;
+}
+
+.border-width-1 {
+  border-width: 1px;
+}
+
+.border-solid {
+  border-style: solid;
+}
+
+.upgrade {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+  max-width: 700px;
+  margin-inline: auto;
+}
+.upgrade h1 {
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  font-size: clamp(16px, 5vw, 52px);
+  font-style: normal;
+  color: rgb(62, 84, 163);
+}
+.upgrade p {
+  font-family: "Heebo", sans-serif;
+  font-weight: 400;
+  font-size: clamp(16px, 2vw, 20px);
+  font-style: normal;
+  color: rgb(115, 115, 115);
+}
+.upgrade button, .upgrade .header-nav div ul li .header-btn, .header-nav div ul li .upgrade .header-btn, .upgrade .hero-section .article-1 button, .hero-section .article-1 .upgrade button {
+  border: none;
+  background-color: #ED2C49;
+  color: white;
+  letter-spacing: 1px;
+  font-family: "Barlow", sans-serif;
+  font-weight: 700;
+  font-size: clamp(14px, 2.5vw, 18px);
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.difference-table, .billing-cycle .article2 {
+  background-color: rgb(62, 84, 163);
+  color: white;
+  margin-inline: 25px;
+  border-radius: 10px;
+  padding-inline: 30px;
+  padding-bottom: 4rem;
+}
+.difference-table .fa-solid, .billing-cycle .article2 .fa-solid {
+  color: rgb(62, 84, 163);
+  background-color: white;
+  padding-block: 0.3rem;
+  padding-inline: 0.4rem;
+  border-radius: 50%;
+  font-size: clamp(5px, 1.5vw, 8px);
+  font-weight: 800;
+  transform: translateY(-3px);
+  margin-left: 5px;
+}
+.difference-table h1, .billing-cycle .article2 h1 {
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  font-size: clamp(20px, 5vw, 43px);
+  font-style: normal;
+  text-align: center;
+  padding-block: 4rem;
+  max-width: 1000px;
+  margin-inline: auto;
+}
+.difference-table div, .billing-cycle .article2 div {
+  display: flex;
+  background-color: #4761BB;
+  margin-bottom: 1rem;
+  padding-block: 0.5rem;
+  border-radius: 10px;
+  padding-inline: 25px;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin-inline: auto;
+}
+.difference-table div .none, .billing-cycle .article2 div .none {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+.difference-table div .none .none-1, .billing-cycle .article2 div .none .none-1 {
+  margin-left: -3rem;
+}
+.difference-table div .none .none-2, .billing-cycle .article2 div .none .none-2 {
+  margin-left: 3rem;
+}
+.difference-table div .none .none-3, .billing-cycle .article2 div .none .none-3 {
+  margin-left: 2.8rem;
+}
+.difference-table div .none .none-4, .billing-cycle .article2 div .none .none-4 {
+  margin-left: -0.4rem;
+}
+.difference-table div .none .none-5, .billing-cycle .article2 div .none .none-5 {
+  margin-left: 3rem;
+}
+.difference-table div .none .none-7, .billing-cycle .article2 div .none .none-7 {
+  margin-left: 3rem;
+}
+.difference-table div hr, .billing-cycle .article2 div hr {
+  display: none;
+}
+.difference-table div .fa-regular, .billing-cycle .article2 div .fa-regular {
+  font-size: clamp(15px, 5vw, 25px);
+}
+.difference-table div .fa-circle-xmark, .billing-cycle .article2 div .fa-circle-xmark {
+  opacity: 0.5;
+}
+.difference-table div .fa-circle-check-2, .billing-cycle .article2 div .fa-circle-check-2 {
+  padding-right: 4rem;
+}
+.difference-table div .h4s, .billing-cycle .article2 div .h4s {
+  font-family: "Heebo", sans-serif;
+  font-weight: 400;
+  font-size: clamp(14px, 3vw, 18px);
+  font-style: normal;
+  flex-grow: 1;
+}
+.difference-table div span, .billing-cycle .article2 div span {
+  display: flex;
+  justify-content: space-between;
+  gap: 12rem;
+}
+.difference-table div i, .billing-cycle .article2 div i {
+  padding-right: 6rem;
+}
+.difference-table .t-heads, .billing-cycle .article2 .t-heads {
+  display: flex;
+  margin-bottom: 1rem;
+  padding-block: 0.5rem;
+  border-radius: 10px;
+  padding-inline: 25px;
+  justify-content: space-between;
+  max-width: 1000px;
+}
+.difference-table .t-heads h3, .billing-cycle .article2 .t-heads h3 {
+  font-family: "Heebo", sans-serif;
+  font-weight: 400;
+  font-size: clamp(16px, 2vw, 20px);
+  font-style: normal;
+  text-transform: capitalize;
+}
+.difference-table .t-heads .h3, .billing-cycle .article2 .t-heads .h3 {
+  padding-right: 5rem;
+}
+.difference-table .t-heads p, .billing-cycle .article2 .t-heads p {
+  margin-right: 12rem;
+}
+
+@media (max-width: 810px) {
+  .difference-table .t-heads, .billing-cycle .article2 .t-heads {
+    display: flex;
+    justify-content: space-around;
+  }
+  .difference-table .t-heads .h3, .billing-cycle .article2 .t-heads .h3 {
+    padding-right: 0;
+  }
+  .difference-table .t-heads p, .billing-cycle .article2 .t-heads p {
+    display: none;
+  }
+  .difference-table .divs, .billing-cycle .article2 .divs {
+    display: flex;
+    flex-direction: column;
+  }
+  .difference-table .divs .none, .billing-cycle .article2 .divs .none {
+    display: flex;
+    justify-content: space-around;
+    min-width: 100%;
+  }
+  .difference-table .divs .none .i-1, .billing-cycle .article2 .divs .none .i-1 {
+    margin-right: 9rem;
+  }
+  .difference-table .divs .none .i-1-i, .billing-cycle .article2 .divs .none .i-1-i {
+    margin-right: 3rem;
+  }
+  .difference-table .divs .none .none-2-xmark, .billing-cycle .article2 .divs .none .none-2-xmark {
+    margin-left: 0;
+  }
+  .difference-table .divs .none .fa-circle-xmark, .billing-cycle .article2 .divs .none .fa-circle-xmark {
+    transform: translateX(1rem);
+  }
+  .difference-table .divs .none .fa-circle-check, .billing-cycle .article2 .divs .none .fa-circle-check {
+    transform: translateX(4rem);
+  }
+  .difference-table .divs hr, .billing-cycle .article2 .divs hr {
+    display: block;
+    height: 1px;
+    background-color: #DBE5E6;
+    border: none;
+    opacity: 0.4;
+  }
+  .difference-table .divs h4, .billing-cycle .article2 .divs h4 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FAFAFA;
+  overflow-x: hidden;
+}
+
+button, .header-nav div ul li .header-btn, .hero-section .article-1 button {
+  padding-inline: 2rem;
+  padding-block: 1rem;
+}
+
+/**
+*!UTILITY styles
+**/
+.main-btn, .hero-section .article-1 button, .hero-section .article-1 .header-nav div ul li .header-btn, .header-nav div ul li .hero-section .article-1 .header-btn, .upgrade button, .upgrade .header-nav div ul li .header-btn, .header-nav div ul li .upgrade .header-btn {
+  padding-inline: 20px;
+  padding-block: 10px;
+  border-radius: 30px;
+}
+
+.list-none {
+  list-style-type: none;
+}
+
+.textdecoration-no {
+  text-decoration: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.center {
+  align-items: center;
+  justify-content: center;
+}
+
+.m-inline {
+  margin-inline: 45px;
+}
+
+.mr-ml-auto {
+  margin-inline: auto;
+}
+
+.no-border {
+  border: none;
+}
+
+.border-radius-1 {
+  border-radius: 10px;
+}
+
+.border-radius-10 {
+  border-radius: 50%;
+}
+
+.border-lightgrey {
+  border-color: lightgrey;
+}
+
+.border-width-1 {
+  border-width: 1px;
+}
+
+.border-solid {
+  border-style: solid;
+}
+
+.intro, .testimonial, .how-it-works {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  background-color: #F0F4F4;
+  gap: 2rem;
+  margin-inline: 25px;
+  padding-inline: 30px;
+  padding-block: 4rem;
+  border-radius: 10px;
+}
+.intro article, .testimonial article, .how-it-works article {
+  grid-column: span 6;
+  background-color: white;
+  text-align: center;
+  color: black;
+  padding: 2rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.intro article p, .testimonial article p, .how-it-works article p {
+  font-family: "Heebo", sans-serif;
+  font-weight: 400;
+  font-size: clamp(12px, 2vw, 21px);
+  font-style: normal;
+}
+.intro article span, .testimonial article span, .how-it-works article span {
+  font-size: clamp(14px, 4vw, 30px);
+}
+.intro article div h3, .testimonial article div h3, .how-it-works article div h3 {
+  font-family: "Heebo", sans-serif;
+  font-weight: 700;
+  font-size: clamp(14px, 2vw, 17px);
+  font-style: normal;
+  color: rgb(62, 84, 163);
+  text-transform: uppercase;
+}
+.intro article div p, .testimonial article div p, .how-it-works article div p {
+  font-family: "Heebo", sans-serif;
+  font-weight: 400;
+  font-size: clamp(12px, 2.5vw, 15px);
+  font-style: normal;
+  color: grey;
+}
+
+@media (max-width: 1025px) {
+  .intro, .testimonial, .how-it-works {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .intro article, .testimonial article, .how-it-works article {
+    max-width: 700px;
+    margin-inline: auto;
+    padding-block: 3rem;
+  }
+}
+.testimonial {
+  background-image: linear-gradient(360deg, #F0F4F4, mintcream);
+}
+.testimonial article {
+  border-radius: 5px;
+}
+
+.billing-cycle {
+  padding-inline: 25px;
+}
+.billing-cycle .article3 {
+  display: none;
+}
+.billing-cycle .span {
+  font-family: "Heebo", sans-serif;
+  font-weight: 700;
+  font-size: clamp(14px, 2vw, 17px);
+  font-style: normal;
+  padding-block: 0;
+  padding-inline: 0;
+  display: inline;
+}
+.billing-cycle .article1 {
+  max-width: 900px;
+  margin-inline: auto;
+  margin-top: 8rem;
+}
+.billing-cycle .article1 h2 {
+  text-align: center;
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  font-size: clamp(20px, 5vw, 42px);
+  font-style: normal;
+  margin-bottom: 4rem;
+}
+.billing-cycle .article1 div {
+  background-color: rgb(62, 84, 163);
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+  margin-inline: 1rem;
+  padding-block: clamp(1rem, 5vw, 2rem);
+  padding-inline: clamp(1rem, 5vw, 5rem);
+  position: relative;
+}
+.billing-cycle .article1 div h3 {
+  font-family: "Heebo", sans-serif;
+  font-weight: 700;
+  font-size: clamp(16px, 4vw, 17px);
+  font-style: normal;
+  line-height: 19px;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+.billing-cycle .article1 div span {
+  position: absolute;
+  top: -2.4rem;
+  transform: translateX(-30px);
+  font-size: clamp(20px, 5vw, 35px);
+  background-color: #30417E;
+  padding-block: 1rem;
+  padding-inline: 1rem;
+  border-radius: 50%;
+}
+.billing-cycle .article1 div p {
+  font-family: "Heebo", sans-serif;
+  font-weight: 400;
+  font-size: clamp(14px, 2vw, 17px);
+  font-style: normal;
+  line-height: 26px;
+}
+.billing-cycle .article2 {
+  margin-inline: 0;
+  padding-inline: 0;
+  background-color: #fafafa;
+}
+.billing-cycle .article2 .bi {
+  color: black;
+  padding-left: 3px;
+  font-weight: 900;
+}
+.billing-cycle .article2 .table {
+  display: flex;
+}
+.billing-cycle .article2 .t-head {
+  display: flex;
+  flex-direction: column;
+}
+.billing-cycle .article2 div {
+  background-color: white;
+  color: black;
+}
+.billing-cycle .article2 div h3 {
+  padding-right: 4.5rem;
+}
+.billing-cycle .article2 .div-1 p {
+  padding-left: 10rem;
+  font-family: "Heebo", sans-serif;
+  font-weight: 400;
+  font-size: clamp(14px, 2vw, 17px);
+  font-style: normal;
+  color: rgb(115, 115, 115);
+}
+.billing-cycle .article2 .div-1 h4, .billing-cycle .article2 .div-1 h3 {
+  font-family: "Heebo", sans-serif;
+  font-weight: 700;
+  font-size: clamp(14px, 2vw, 17px);
+  font-style: normal;
+}
+.billing-cycle .article2 .div-2 p {
+  padding-left: 14rem;
+  font-family: "Heebo", sans-serif;
+  font-weight: 400;
+  font-size: clamp(14px, 2vw, 17px);
+  font-style: normal;
+  color: rgb(115, 115, 115);
+}
+.billing-cycle .article2 .div-2 h4, .billing-cycle .article2 .div-2 h3 {
+  font-family: "Heebo", sans-serif;
+  font-weight: 700;
+  font-size: clamp(14px, 2vw, 17px);
+  font-style: normal;
+}
+.billing-cycle .article2 .div-3 h4, .billing-cycle .article2 .div-3 h3 {
+  font-family: "Heebo", sans-serif;
+  font-weight: 700;
+  font-size: clamp(14px, 2vw, 17px);
+  font-style: normal;
+}
+.billing-cycle .article2 .div-4 h4, .billing-cycle .article2 .div-4 h3 {
+  font-family: "Heebo", sans-serif;
+  font-weight: 700;
+  font-size: clamp(14px, 2vw, 17px);
+  font-style: normal;
+}
+.billing-cycle .article2 .first {
+  padding-left: 11rem;
+}
+.billing-cycle .article2 .second {
+  padding-left: 4rem;
+}
+.billing-cycle .article2 button, .billing-cycle .article2 .header-nav div ul li .header-btn, .header-nav div ul li .billing-cycle .article2 .header-btn {
+  padding-inline: 20px;
+  padding-block: 10px;
+  border-radius: 30px;
+  border: none;
+  background-color: #ED2C49;
+  color: white;
+  font-family: "Barlow", sans-serif;
+  font-weight: 700;
+  font-size: clamp(17px, 2vw, 17px);
+  font-style: italic;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.billing-cycle .article2 .btn-first {
+  margin-left: 16rem;
+}
+.billing-cycle .article2 .fa-regular {
+  color: rgb(62, 84, 163);
+}
+.billing-cycle .article {
+  background-color: white;
+  max-width: 1000px;
+  margin-inline: auto;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  margin-top: 5rem;
+  color: white;
+}
+.billing-cycle .article .table {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  position: relative;
+}
+.billing-cycle .article .table em {
+  font-style: normal;
+}
+.billing-cycle .article .table div {
+  padding-block: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+.billing-cycle .article .table p {
+  font-family: "Heebo", sans-serif;
+  font-weight: 700;
+  font-size: clamp(14px, 2vw, 17px);
+  font-style: normal;
+}
+.billing-cycle .article .table h5 {
+  font-family: "Heebo", sans-serif;
+  font-weight: 700;
+  font-size: clamp(14px, 2vw, 17px);
+  font-style: normal;
+  color: rgb(115, 115, 115);
+  opacity: 0.3;
+  text-decoration: line-through;
+}
+.billing-cycle .article .table h2 {
+  font-family: "Heebo", sans-serif;
+  font-weight: 700;
+  font-size: clamp(25px, 2vw, 30px);
+  font-style: normal;
+  color: black;
+  text-decoration: line-through;
+}
+.billing-cycle .article .table h4 {
+  font-family: "Heebo", sans-serif;
+  font-weight: 400;
+  font-size: clamp(12px, 2.5vw, 15px);
+  font-style: normal;
+}
+.billing-cycle .article .table span {
+  background-color: cornflowerblue;
+  padding-block: 0.2rem;
+  padding-inline: 0.9rem;
+  border-radius: 20px;
+  font-family: "Barlow", sans-serif;
+  font-weight: 700;
+  font-size: clamp(12px, 2.5vw, 15px);
+  font-style: normal;
+  text-transform: uppercase;
+}
+.billing-cycle .article .table .em {
+  position: absolute;
+  top: -0.5rem;
+  right: 4rem;
+}
+.billing-cycle .article .table .em span {
+  border-radius: 5px;
+  background-color: skyblue;
+  font-family: "Barlow", sans-serif;
+  font-weight: 700;
+  font-size: clamp(12px, 2.5vw, 15px);
+  font-style: normal;
+  text-transform: uppercase;
+  padding-block: 5px;
+}
+.billing-cycle .article .table .t-head2 {
+  padding-inline: 25px;
+  max-width: 15rem;
+  background-color: rgb(62, 84, 163);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.billing-cycle .article .table .t-head2 h2 {
+  color: white;
+}
+.billing-cycle .article .table .t-head2 h5 {
+  color: white;
+  opacity: 0.4;
+}
+.billing-cycle .article .table .t-head1 {
+  margin-left: 20rem;
+}
+.billing-cycle .article .table .t-head1 h4, .billing-cycle .article .table .t-head1 p {
+  color: rgb(115, 115, 115);
+}
+.billing-cycle .bottom {
+  margin-top: -2rem;
+  margin-inline: auto;
+  display: grid;
+  place-content: center;
+}
+.billing-cycle .bottom div {
+  background-color: #F0F4F4;
+  padding-block: 1.5rem;
+  padding-inline: 2rem;
+  border-radius: 10px;
+}
+.billing-cycle .bottom div img {
+  padding-right: 1rem;
+}
+
+@media (max-width: 760px) {
+  .billing-cycle .article, .billing-cycle .article2 {
+    display: none;
+  }
+  .billing-cycle .article3 {
+    display: block;
+    margin-bottom: 4rem;
+    padding-inline: 25px;
+  }
+  .billing-cycle .article3 .table {
+    border-radius: 10px;
+    margin-inline: auto;
+    max-width: 320px;
+    text-align: center;
+    padding-inline: 25px;
+  }
+  .billing-cycle .article3 .table .t-head1 p, .billing-cycle .article3 .table .t-head2 p {
+    font-family: "Heebo", sans-serif;
+    font-weight: 700;
+    font-size: clamp(15px, 2vw, 17px);
+    font-style: normal;
+    text-transform: capitalize;
+    margin-bottom: 1.5rem;
+  }
+  .billing-cycle .article3 .table .t-head1 h5, .billing-cycle .article3 .table .t-head2 h5 {
+    font-family: "Heebo", sans-serif;
+    font-weight: 700;
+    font-size: clamp(17px, 2vw, 17px);
+    font-style: normal;
+    color: rgb(115, 115, 115);
+    opacity: 0.5;
+    text-decoration: line-through;
+    margin-bottom: 0.5rem;
+  }
+  .billing-cycle .article3 .table .t-head1 h2, .billing-cycle .article3 .table .t-head2 h2 {
+    font-family: "Heebo", sans-serif;
+    font-weight: 700;
+    font-size: clamp(25px, 2vw, 30px);
+    font-style: normal;
+    margin-bottom: 0.5rem;
+  }
+  .billing-cycle .article3 .table .t-head1 span, .billing-cycle .article3 .table .t-head2 span {
+    background-color: cornflowerblue;
+    color: white;
+    border-radius: 30px;
+    padding-block: 0.3rem;
+    padding-inline: 0.7rem;
+    font-style: normal;
+  }
+  .billing-cycle .article3 .table .t-head1 h4, .billing-cycle .article3 .table .t-head2 h4 {
+    font-family: "Heebo", sans-serif;
+    font-weight: 400;
+    font-size: clamp(14px, 1.2vw, 16px);
+    font-style: normal;
+    color: rgb(115, 115, 115);
+    margin-bottom: 1rem;
+    margin-top: 0.8rem;
+  }
+  .billing-cycle .article3 .table button, .billing-cycle .article3 .table .header-nav div ul li .header-btn, .header-nav div ul li .billing-cycle .article3 .table .header-btn {
+    padding-inline: 20px;
+    padding-block: 10px;
+    border-radius: 30px;
+    border: none;
+    background-color: #ED2C49;
+    color: white;
+    font-family: "Barlow", sans-serif;
+    font-weight: 700;
+    font-size: clamp(17px, 2vw, 17px);
+    font-style: italic;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+  }
+  .billing-cycle .article3 .table .t-head2 {
+    margin-top: 2rem;
+  }
+  .billing-cycle .article3 hr {
+    margin-bottom: 1rem;
+    width: 95%;
+    margin-inline: auto;
+  }
+  .billing-cycle .article3 .t-body1 h4, .billing-cycle .article3 .t-body2 h4 {
+    margin-bottom: 1rem;
+    font-family: "Heebo", sans-serif;
+    font-weight: 700;
+    font-size: clamp(17px, 2vw, 17px);
+    font-style: normal;
+    margin-top: 1.5rem;
+  }
+  .billing-cycle .article3 .t-body1 h4 .span, .billing-cycle .article3 .t-body2 h4 .span {
+    font-family: "Heebo", sans-serif;
+    font-weight: 400;
+    font-size: clamp(17px, 2vw, 17px);
+    font-style: normal;
+    color: rgb(115, 115, 115);
+  }
+  .billing-cycle .article3 .t-body1 p, .billing-cycle .article3 .t-body2 p {
+    font-family: "Heebo", sans-serif;
+    font-weight: 400;
+    font-size: clamp(17px, 2vw, 17px);
+    font-style: normal;
+    margin-bottom: 1rem;
+  }
+  .billing-cycle .article3 .table1 {
+    background-color: white;
+    margin-top: 4rem;
+  }
+  .billing-cycle .article3 .table1 .t-head1 p {
+    padding-top: 1rem;
+  }
+  .billing-cycle .article3 .table2 {
+    background-color: rgb(62, 84, 163);
+    color: white;
+  }
+  .billing-cycle .article3 .table2 .t-head2 {
+    position: relative;
+  }
+  .billing-cycle .article3 .table2 .t-head2 p, .billing-cycle .article3 .table2 .t-head2 h5, .billing-cycle .article3 .table2 .t-head2 h4 {
+    color: white;
+  }
+  .billing-cycle .article3 .table2 .t-head2 p {
+    padding-top: 2.5rem;
+  }
+  .billing-cycle .article3 .table2 .t-head2 .em {
+    position: absolute;
+    top: -7px;
+    right: 5rem;
+  }
+  .billing-cycle .article3 .table2 .t-head2 .em span {
+    background-color: skyblue;
+    padding-inline: 0.5rem;
+    padding-block: 0.2rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+  }
+}
+.outro {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  background-color: rgb(62, 84, 163);
+  padding-block: 4rem;
+  padding-left: 1.5rem;
+  color: white;
+  margin-top: 7rem;
+  margin-inline: 30px;
+  border-radius: 10px;
+}
+.outro .article {
+  grid-column: span 6;
+  display: grid;
+  gap: 2rem;
+  padding-bottom: 2rem;
+}
+.outro .article h1 {
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  font-size: clamp(20px, 5vw, 43px);
+  font-style: normal;
+}
+.outro .article p {
+  font-family: "Heebo", sans-serif;
+  font-weight: 400;
+  font-size: clamp(14px, 2vw, 17px);
+  font-style: normal;
+  margin-bottom: 1rem;
+}
+.outro .article button, .outro .article .header-nav div ul li .header-btn, .header-nav div ul li .outro .article .header-btn {
+  font-family: "Barlow", sans-serif;
+  font-weight: 700;
+  font-size: clamp(14px, 2vw, 17px);
+  font-style: italic;
+  color: rgb(62, 84, 163);
+  letter-spacing: 2px;
+  background-color: white;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 30px;
+  margin-bottom: 1rem;
+}
+.outro .article a {
+  color: white;
+}
+.outro .article1 {
+  grid-column: 8/span 6;
+  background-image: url("/pro-teams.webp");
+  background-repeat: no-repeat;
+  background-size: 450px 400px;
+}
+.outro .article1 img {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .outro {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+  }
+  .outro .article {
+    order: 2;
+  }
+  .outro .article1 {
+    order: 1;
+    background: none;
+  }
+  .outro .article1 img {
+    display: block;
+    max-width: 300px;
+    margin-inline: auto;
+  }
+}
+.ecology {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1rem;
+  margin-inline: 25px;
+  margin-block: 70px;
+  background-color: #F0F4F4;
+  border-radius: 10px;
+  padding-inline: 25px;
+  padding-block-start: 60px;
+  padding-block-end: 120px;
+}
+.ecology h1 {
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  font-size: clamp(20px, 5vw, 43px);
+  font-style: normal;
+}
+.ecology p {
+  font-family: "Heebo", sans-serif;
+  font-weight: 500;
+  font-size: clamp(16px, 2vw, 20px);
+  font-style: normal;
+  color: rgb(115, 115, 115);
+}
+.ecology img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+.ecology .article {
+  grid-column: span 7;
+  padding-right: 2rem;
+  margin-top: 5rem;
+}
+.ecology .article h1 {
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  font-size: clamp(20px, 5vw, 43px);
+  font-style: normal;
+  margin-bottom: 2rem;
+}
+.ecology .article p {
+  font-family: "Heebo", sans-serif;
+  font-weight: 400;
+  font-size: clamp(16px, 2vw, 20px);
+  font-style: normal;
+  line-height: 30px;
+  color: rgb(115, 115, 115);
+}
+.ecology .article1 {
+  grid-column: span 5;
+  position: relative;
+}
+.ecology .article1 .green-forest {
+  max-width: 350px;
+}
+.ecology .article1 .ecology-1 {
+  padding: 1rem;
+  position: absolute;
+  top: 265px;
+  right: 30px;
+  max-width: 180px;
+  background-image: linear-gradient(180deg, #C5DDEB 70%, #BFC8CA, #818687);
+}
+
+@media (max-width: 1025px) {
+  .ecology {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-inline: 25px;
+    margin-block: 70px;
+    background-color: #F0F4F4;
+    border-radius: 10px;
+    padding-inline: 25px;
+    padding-block-start: 60px;
+    padding-block-end: 120px;
+    text-align: center;
+  }
+  .ecology .article {
+    margin-top: 6rem;
+  }
+}
+@media (max-width: 950px) {
+  .ecology .ecology-1 {
+    right: 10rem;
+  }
+}
+.faq {
+  padding-bottom: 6rem;
+}
+.faq h1 {
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  font-size: clamp(16px, 5vw, 31px);
+  font-style: normal;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+.faq .div {
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid #DBE5E6;
+  margin-inline: auto;
+  margin-bottom: 1.5rem;
+  max-width: 600px;
+}
+.faq .div hr {
+  border: none;
+  height: 0.7px;
+  background-color: #DBE5E6;
+}
+.faq .div p {
+  font-family: "Heebo", sans-serif;
+  font-weight: 400;
+  font-size: clamp(14px, 2vw, 18px);
+  font-style: normal;
+  color: rgb(115, 115, 115);
+  opacity: 0.9;
+  padding-block: 1rem;
+  margin-left: 1rem;
+}
+.faq .div div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 0.3rem;
+  padding-left: 1rem;
+}
+.faq .div div h3 {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-size: clamp(14px, 2vw, 18px);
+  font-style: normal;
+}
+.faq .div div button, .faq .div .header-nav div ul li .header-btn, .header-nav .faq .div div ul li .header-btn {
+  background-color: white;
+  border: none;
+}
+.faq article {
+  margin-top: 10rem;
+}
+.faq article h1 {
+  margin-inline: auto;
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  font-size: clamp(16px, 5vw, 53px);
+  font-style: normal;
+  max-width: 800px;
+  color: rgb(62, 84, 163);
+}
+.faq article p {
+  margin-top: -1em;
+  color: rgb(115, 115, 115);
+  font-family: "Heebo", sans-serif;
+  font-weight: 300;
+  font-size: clamp(16px, 2vw, 21px);
+  font-style: normal;
+  line-height: 35px;
+  margin-inline: auto;
+  text-align: center;
+  max-width: 900px;
+}
+.faq article div {
+  display: flex;
+  align-items: center;
+  margin-top: 3rem;
+}
+.faq article div button, .faq article .header-nav div ul li .header-btn, .header-nav .faq article div ul li .header-btn, .faq article div .hero-section .article-1 button, .hero-section .article-1 .faq article div button {
+  padding-inline: 2rem;
+  padding-block: 1rem;
+  border-radius: 30px;
+  background-color: #ED2C49;
+  text-transform: uppercase;
+  color: white;
+  font-family: "Barlow", sans-serif;
+  font-weight: 700;
+  font-size: clamp(14px, 2vw, 18px);
+  font-style: italic;
+  letter-spacing: 1px;
+}
+
+footer {
+  padding-top: 4rem;
+  background-color: white;
+}
+footer .nav-1 {
+  padding-inline: 25px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+footer .nav-1 img {
+  max-width: 100%;
+}
+footer .nav-1 ul {
+  display: flex;
+  gap: 2rem;
+}
+footer .nav-1 ul li {
+  font-size: clamp(15px, 2.5vw, 30px);
+}
+footer .nav-1 ul li i {
+  color: skyblue;
+}
+footer section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding-inline: 25px;
+}
+footer section .span2 h2 {
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  font-size: clamp(16px, 3vw, 26px);
+  font-style: normal;
+  color: rgb(62, 84, 163);
+  margin-bottom: 1rem;
+}
+footer section .span2 p {
+  font-family: "Heebo", sans-serif;
+  font-weight: 300;
+  font-size: clamp(14px, 2vw, 18px);
+  font-style: normal;
+  max-width: 400px;
+}
+footer section .span2 form {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+footer section .span2 form input {
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  font-size: clamp(14px, 2vw, 18px);
+  font-style: normal;
+  padding-inline: 1rem;
+  padding-block: 0.5rem;
+  border-radius: 10px;
+  border: 1px solid #DBE5E6;
+  opacity: 0.7;
+}
+footer section .span2 form button, footer section .span2 form .header-nav div ul li .header-btn, .header-nav div ul li footer section .span2 form .header-btn, footer section .span2 form .hero-section .article-1 button, .hero-section .article-1 footer section .span2 form button {
+  padding-inline: 2rem;
+  padding-block: 1rem;
+  border-radius: 30px;
+  background-color: #ED2C49;
+  text-transform: uppercase;
+  color: white;
+  font-family: "Barlow", sans-serif;
+  font-weight: 700;
+  font-size: clamp(14px, 2vw, 18px);
+  font-style: italic;
+  letter-spacing: 1px;
+}
+footer section .span3 {
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+footer section .span3 h2 {
+  letter-spacing: 2px;
+  color: black;
+  font-family: "Heebo", sans-serif;
+  font-weight: 700;
+  font-size: clamp(14px, 2vw, 18px);
+  font-style: normal;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+footer section .span3 ul li {
+  list-style-type: none;
+  line-height: 30px;
+}
+footer section .span3 ul li a {
+  text-decoration: none;
+  color: rgb(115, 115, 115);
+  font-family: "Heebo", sans-serif;
+  font-weight: 400;
+  font-size: clamp(14px, 2vw, 17px);
+  font-style: normal;
+}
+footer hr {
+  border: none;
+  height: 0.7px;
+  background-color: #DBE5E6;
+}
+footer .span1 {
+  display: flex;
+  justify-content: space-between;
+  color: rgb(115, 115, 115);
+  padding-block: 1rem;
+  padding-inline: 1rem;
+}
+footer .span1 ul {
+  display: flex;
+  gap: 1rem;
+  font-family: "Heebo", sans-serif;
+  font-weight: 400;
+  font-size: clamp(10px, 2vw, 15px);
+  font-style: normal;
+}
+footer .span1 ul li {
+  list-style-type: none;
+}/*# sourceMappingURL=style.min.css.map */

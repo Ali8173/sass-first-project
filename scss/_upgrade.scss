@@ -1,0 +1,33 @@
+
+@import "utility";
+
+
+.upgrade{
+    text-align:center;
+    display: flex;
+    flex-direction:column;
+    gap:2rem;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+    max-width:700px;
+    margin-inline: auto;
+    h1{
+        @include font($barlow, 500, clamp(16px, 5vw, 52px), normal);
+        color:$blue;
+    }
+
+    p{
+        @include font($heebo, 400, clamp(16px, 2vw, 20px), normal);
+        color:$grey;
+    }
+
+    button{
+        @extend .main-btn;  
+        border:none;
+        background-color:$red;
+        color:$white;
+        letter-spacing: 1px;
+        @include font($barlow, 700, clamp(14px, 2.5vw, 18px), italic);
+        text-transform: uppercase;
+    }
+}
